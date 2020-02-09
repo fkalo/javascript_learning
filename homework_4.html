@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Első Javascript oldalam</h1>
+    <p id="demo">Ez egy bekezdés és benne szöveg</p>
+    <button type="button" onclick="myFunction()">Nyomj meg</button>
+    <script>
+      function myFunction() {
+        var fruits = ["málna", "eper", "kiwi", "szilva", "szőlő", "alma", "körte"];
+        var i = 0;
+
+        do {
+          document.write(fruits[i] + " ");
+          i++;
+        }
+        while (i < 7);
+
+        fruits.splice(2, 1, "sárkányfű");
+
+        for (i of fruits) {
+            console.log(i);
+        }
+
+        fruits.unshift("ananász");
+        fruits.push("mangó");
+        fruits.sort();
+
+        for (i = 0; i < 9; i++){
+            if (i == 2)
+                continue;
+            if (i == 4)
+                continue;
+            if (fruits[i] == "málna")
+                break;
+            console.log(fruits[i]);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kafu üdvözlőoldala</title>
+  </head>
+  <body>
+
+    <h2>Enter you name here:</h2>
+      <input id="name">
+
+    <h2>What time is it now?</h2>
+      <input id="hour" type="number" maxlength="2" min="0" max="23" ontimeupdate="timeValidation">
+      :
+      <input id="min" type="number" maxlength="2" min="0" max="59">
+
+    <p>Input based greeting</p>
+      <button type="button" onclick="greetingAfterInput()">Köszönts!</button>
+      <input id="hi" disabled>
+
+    <p>System Time based greeting</p>
+      <button type="button" onclick="greetingBasedOnSystemTime()">Greet me!</button>
+      <input id="greeting" disabled>
+
+  <script src="homework_2.js"></script>
+
+  </body>
+</html>
